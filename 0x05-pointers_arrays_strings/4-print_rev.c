@@ -1,16 +1,24 @@
-nclude "main.h"
+#include "main.h"
 
 /**
-   * main - check the code
-    *
-     * Return: Always 0.
-      */
-int main(void)
-{
-	    char *str;
+ * print_rev - check the code
+ * @s: a pointer to an int
+ * Return
+ */
 
-	        str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-		    print_rev(str);
-		        return (0);
+void print_rev(char *s)
+{
+	int a;
+
+	a = 0;
+	while (s[a] != '\0')
+	{
+	a++;
+	}
+	for (a = a - 1; a >= 0; a--)
+	{
+		_putchar (s[a]);
+	}
+	_putchar ('\n');
 }
 
